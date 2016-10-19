@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847F2D911DB65B53006E2CAF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847F2D901DB65B53006E2CAF /* AVFoundation.framework */; };
 		84832BE91DB63CB60077EC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84832BE81DB63CB60077EC30 /* AppDelegate.swift */; };
 		84832BEB1DB63CB60077EC30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84832BEA1DB63CB60077EC30 /* ViewController.swift */; };
 		84832BEE1DB63CB60077EC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84832BEC1DB63CB60077EC30 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		847F2D901DB65B53006E2CAF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		84832BE51DB63CB60077EC30 /* SYPCameVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYPCameVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84832BE81DB63CB60077EC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84832BEA1DB63CB60077EC30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847F2D911DB65B53006E2CAF /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		847F2D8F1DB65B53006E2CAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847F2D901DB65B53006E2CAF /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84832BDC1DB63CB60077EC30 = {
 			isa = PBXGroup;
 			children = (
 				84832BE71DB63CB60077EC30 /* SYPCameVideo */,
 				84832BE61DB63CB60077EC30 /* Products */,
+				847F2D8F1DB65B53006E2CAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					84832BE41DB63CB60077EC30 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HF526ANGZB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HF526ANGZB;
 				INFOPLIST_FILE = SYPCameVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SYP.SYPCameVideo;
@@ -272,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HF526ANGZB;
 				INFOPLIST_FILE = SYPCameVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SYP.SYPCameVideo;
@@ -299,6 +314,7 @@
 				84832BF91DB63CB60077EC30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
