@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841B37C41DB8A1B40022C7F2 /* SiriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B37C31DB8A1B40022C7F2 /* SiriViewController.swift */; };
+		846F66801DB7B92300DDA203 /* VCTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F667F1DB7B92300DDA203 /* VCTools.swift */; };
 		847F2D911DB65B53006E2CAF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847F2D901DB65B53006E2CAF /* AVFoundation.framework */; };
 		84832BE91DB63CB60077EC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84832BE81DB63CB60077EC30 /* AppDelegate.swift */; };
 		84832BEB1DB63CB60077EC30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84832BEA1DB63CB60077EC30 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841B37C31DB8A1B40022C7F2 /* SiriViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriViewController.swift; sourceTree = "<group>"; };
+		846F667F1DB7B92300DDA203 /* VCTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTools.swift; sourceTree = "<group>"; };
 		847F2D901DB65B53006E2CAF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		84832BE51DB63CB60077EC30 /* SYPCameVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYPCameVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84832BE81DB63CB60077EC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,12 +70,14 @@
 		84832BE71DB63CB60077EC30 /* SYPCameVideo */ = {
 			isa = PBXGroup;
 			children = (
+				846F667F1DB7B92300DDA203 /* VCTools.swift */,
 				84832BE81DB63CB60077EC30 /* AppDelegate.swift */,
 				84832BEA1DB63CB60077EC30 /* ViewController.swift */,
 				84832BEC1DB63CB60077EC30 /* Main.storyboard */,
 				84832BEF1DB63CB60077EC30 /* Assets.xcassets */,
 				84832BF11DB63CB60077EC30 /* LaunchScreen.storyboard */,
 				84832BF41DB63CB60077EC30 /* Info.plist */,
+				841B37C31DB8A1B40022C7F2 /* SiriViewController.swift */,
 			);
 			path = SYPCameVideo;
 			sourceTree = "<group>";
@@ -150,6 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84832BEB1DB63CB60077EC30 /* ViewController.swift in Sources */,
+				841B37C41DB8A1B40022C7F2 /* SiriViewController.swift in Sources */,
+				846F66801DB7B92300DDA203 /* VCTools.swift in Sources */,
 				84832BE91DB63CB60077EC30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
