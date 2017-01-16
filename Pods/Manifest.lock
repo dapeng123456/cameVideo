@@ -1,0 +1,18 @@
+PODS:
+  - BmobSDK (2.0.1)
+  - Kingfisher (3.2.2)
+  - MBProgressHUD (1.0.0)
+
+DEPENDENCIES:
+  - BmobSDK
+  - Kingfisher
+  - MBProgressHUD
+
+SPEC CHECKSUMS:
+  BmobSDK: 315013af15af31697a3b92cad2c74effed849b85
+  Kingfisher: 821466474ad7ffc375a4aecadfa05068cfed67b3
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+
+PODFILE CHECKSUM: 156558fdabe2ebaa7369eb9a2297787c0ab7630f
+
+COCOAPODS: 1.1.1
