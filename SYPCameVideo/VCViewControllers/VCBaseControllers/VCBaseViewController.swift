@@ -1,18 +1,19 @@
 //
-//  VCFoundController.swift
+//  VCBaseViewController.swift
 //  SYPCameVideo
 //
-//  Created by dapeng on 2017/1/16.
+//  Created by dapeng on 2017/2/7.
 //  Copyright © 2017年 SYP. All rights reserved.
 //
 
 import UIKit
 
-class VCFoundController: VCBaseViewController {
+class VCBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "发现"
+        self.view.backgroundColor = UIColor.white
+        
         // Do any additional setup after loading the view.
     }
 

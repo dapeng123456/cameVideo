@@ -14,12 +14,26 @@
 		84832BEE1DB63CB60077EC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84832BEC1DB63CB60077EC30 /* Main.storyboard */; };
 		84832BF01DB63CB60077EC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84832BEF1DB63CB60077EC30 /* Assets.xcassets */; };
 		84832BF31DB63CB60077EC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84832BF11DB63CB60077EC30 /* LaunchScreen.storyboard */; };
+		E13B4C581E4AB0520016CC97 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C571E4AB0520016CC97 /* CoreLocation.framework */; };
+		E13B4C5A1E4AB05E0016CC97 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C591E4AB05E0016CC97 /* Security.framework */; };
+		E13B4C5C1E4AB06D0016CC97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C5B1E4AB06D0016CC97 /* CoreGraphics.framework */; };
+		E13B4C5E1E4AB07A0016CC97 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C5D1E4AB07A0016CC97 /* MobileCoreServices.framework */; };
+		E13B4C601E4AB08E0016CC97 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C5F1E4AB08E0016CC97 /* CFNetwork.framework */; };
+		E13B4C621E4AB09B0016CC97 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C611E4AB09B0016CC97 /* CoreTelephony.framework */; };
+		E13B4C641E4AB0BC0016CC97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C631E4AB0BC0016CC97 /* SystemConfiguration.framework */; };
+		E13B4C661E4AB0E60016CC97 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C651E4AB0E60016CC97 /* libz.1.2.5.tbd */; };
+		E13B4C681E4AB0F90016CC97 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C671E4AB0F90016CC97 /* libicucore.tbd */; };
+		E13B4C6A1E4AB1150016CC97 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C691E4AB1150016CC97 /* libsqlite3.tbd */; };
+		E13B4C6C1E4AB12D0016CC97 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C6B1E4AB12D0016CC97 /* libc++.tbd */; };
+		E13B4C6F1E4ABA9A0016CC97 /* SYPEditPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13B4C6E1E4ABA9A0016CC97 /* SYPEditPhotoViewController.swift */; };
+		E13B4C711E4AC3590016CC97 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B4C701E4AC3590016CC97 /* Photos.framework */; };
 		E16BDE7B1E2C679000315160 /* VCTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BDE7A1E2C679000315160 /* VCTools.swift */; };
 		E16BDE7E1E2C685C00315160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BDE7D1E2C685C00315160 /* ViewController.swift */; };
 		E16BDE811E2C68FC00315160 /* VCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BDE801E2C68FC00315160 /* VCTabBarController.swift */; };
 		E16BDE841E2C6D9900315160 /* VCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BDE831E2C6D9900315160 /* VCHomeViewController.swift */; };
 		E16BDE871E2C6E3A00315160 /* VCFoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BDE861E2C6E3A00315160 /* VCFoundController.swift */; };
 		E16BDE8A1E2C6F1700315160 /* VCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BDE891E2C6F1700315160 /* VCNavigationController.swift */; };
+		E1921B101E49DC8600A67895 /* VCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1921B0F1E49DC8600A67895 /* VCBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +48,27 @@
 		84832BF21DB63CB60077EC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84832BF41DB63CB60077EC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0FDE8D1BDB94DE10D7EA2AB /* Pods-SYPCameVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYPCameVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYPCameVideo/Pods-SYPCameVideo.release.xcconfig"; sourceTree = "<group>"; };
+		E13B4C571E4AB0520016CC97 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E13B4C591E4AB05E0016CC97 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E13B4C5B1E4AB06D0016CC97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E13B4C5D1E4AB07A0016CC97 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E13B4C5F1E4AB08E0016CC97 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E13B4C611E4AB09B0016CC97 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E13B4C631E4AB0BC0016CC97 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E13B4C651E4AB0E60016CC97 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		E13B4C671E4AB0F90016CC97 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		E13B4C691E4AB1150016CC97 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E13B4C6B1E4AB12D0016CC97 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E13B4C6D1E4AB2EB0016CC97 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
+		E13B4C6E1E4ABA9A0016CC97 /* SYPEditPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYPEditPhotoViewController.swift; sourceTree = "<group>"; };
+		E13B4C701E4AC3590016CC97 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		E16BDE7A1E2C679000315160 /* VCTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTools.swift; sourceTree = "<group>"; };
 		E16BDE7D1E2C685C00315160 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E16BDE801E2C68FC00315160 /* VCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTabBarController.swift; sourceTree = "<group>"; };
 		E16BDE831E2C6D9900315160 /* VCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCHomeViewController.swift; sourceTree = "<group>"; };
 		E16BDE861E2C6E3A00315160 /* VCFoundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCFoundController.swift; sourceTree = "<group>"; };
 		E16BDE891E2C6F1700315160 /* VCNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCNavigationController.swift; sourceTree = "<group>"; };
+		E1921B0F1E49DC8600A67895 /* VCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +76,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13B4C711E4AC3590016CC97 /* Photos.framework in Frameworks */,
+				E13B4C6C1E4AB12D0016CC97 /* libc++.tbd in Frameworks */,
+				E13B4C6A1E4AB1150016CC97 /* libsqlite3.tbd in Frameworks */,
+				E13B4C681E4AB0F90016CC97 /* libicucore.tbd in Frameworks */,
+				E13B4C661E4AB0E60016CC97 /* libz.1.2.5.tbd in Frameworks */,
+				E13B4C641E4AB0BC0016CC97 /* SystemConfiguration.framework in Frameworks */,
+				E13B4C621E4AB09B0016CC97 /* CoreTelephony.framework in Frameworks */,
+				E13B4C601E4AB08E0016CC97 /* CFNetwork.framework in Frameworks */,
+				E13B4C5E1E4AB07A0016CC97 /* MobileCoreServices.framework in Frameworks */,
+				E13B4C5C1E4AB06D0016CC97 /* CoreGraphics.framework in Frameworks */,
+				E13B4C5A1E4AB05E0016CC97 /* Security.framework in Frameworks */,
+				E13B4C581E4AB0520016CC97 /* CoreLocation.framework in Frameworks */,
 				847F2D911DB65B53006E2CAF /* AVFoundation.framework in Frameworks */,
 				4356616F880182E9751C3D5F /* Pods_SYPCameVideo.framework in Frameworks */,
 			);
@@ -67,6 +108,18 @@
 		847F2D8F1DB65B53006E2CAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E13B4C701E4AC3590016CC97 /* Photos.framework */,
+				E13B4C6B1E4AB12D0016CC97 /* libc++.tbd */,
+				E13B4C691E4AB1150016CC97 /* libsqlite3.tbd */,
+				E13B4C671E4AB0F90016CC97 /* libicucore.tbd */,
+				E13B4C651E4AB0E60016CC97 /* libz.1.2.5.tbd */,
+				E13B4C631E4AB0BC0016CC97 /* SystemConfiguration.framework */,
+				E13B4C611E4AB09B0016CC97 /* CoreTelephony.framework */,
+				E13B4C5F1E4AB08E0016CC97 /* CFNetwork.framework */,
+				E13B4C5D1E4AB07A0016CC97 /* MobileCoreServices.framework */,
+				E13B4C5B1E4AB06D0016CC97 /* CoreGraphics.framework */,
+				E13B4C591E4AB05E0016CC97 /* Security.framework */,
+				E13B4C571E4AB0520016CC97 /* CoreLocation.framework */,
 				847F2D901DB65B53006E2CAF /* AVFoundation.framework */,
 				15A1C9C57FEC8362DE27DB4D /* Pods_SYPCameVideo.framework */,
 			);
@@ -110,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				E16BDE7A1E2C679000315160 /* VCTools.swift */,
+				E13B4C6D1E4AB2EB0016CC97 /* bridging.h */,
 			);
 			path = VCToos;
 			sourceTree = "<group>";
@@ -117,6 +171,7 @@
 		E16BDE7C1E2C67F900315160 /* VCViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E1921B0E1E49DBF100A67895 /* VCBaseControllers */,
 				E16BDE881E2C6EC000315160 /* Navigation */,
 				E16BDE851E2C6DA300315160 /* VCFoundController */,
 				E16BDE821E2C6D5500315160 /* VCHomeControllers */,
@@ -138,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				E16BDE831E2C6D9900315160 /* VCHomeViewController.swift */,
+				E13B4C6E1E4ABA9A0016CC97 /* SYPEditPhotoViewController.swift */,
 			);
 			path = VCHomeControllers;
 			sourceTree = "<group>";
@@ -156,6 +212,14 @@
 				E16BDE891E2C6F1700315160 /* VCNavigationController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E1921B0E1E49DBF100A67895 /* VCBaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1921B0F1E49DC8600A67895 /* VCBaseViewController.swift */,
+			);
+			path = VCBaseControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +351,8 @@
 				E16BDE7B1E2C679000315160 /* VCTools.swift in Sources */,
 				E16BDE841E2C6D9900315160 /* VCHomeViewController.swift in Sources */,
 				E16BDE8A1E2C6F1700315160 /* VCNavigationController.swift in Sources */,
+				E1921B101E49DC8600A67895 /* VCBaseViewController.swift in Sources */,
+				E13B4C6F1E4ABA9A0016CC97 /* SYPEditPhotoViewController.swift in Sources */,
 				E16BDE7E1E2C685C00315160 /* ViewController.swift in Sources */,
 				E16BDE811E2C68FC00315160 /* VCTabBarController.swift in Sources */,
 				84832BE91DB63CB60077EC30 /* AppDelegate.swift in Sources */,
@@ -420,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SYP.SYPCameVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SYPCameVideo/VCToos/bridging.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -436,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SYP.SYPCameVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SYPCameVideo/VCToos/bridging.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

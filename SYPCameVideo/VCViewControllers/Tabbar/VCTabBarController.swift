@@ -17,14 +17,17 @@ class VCTabBarController: UITabBarController {
     }
 
     private func addChildViewControllers(){
-        addChildViewController(VCHomeViewController(), titile: "主页", imageName: "VCTabBar_home")
-        addChildViewController(VCFoundController(), titile: "我", imageName: "VCTabBar_me_boy")
+        addChildViewController(VCHomeViewController(), titile: "主页", imageName: "SYPHome")
+        addChildViewController(VCFoundController(), titile: "我", imageName: "SYPMy")
     }
     
     private func addChildViewController(_ childController: UIViewController, titile:String, imageName:String) {
+        
         childController.tabBarItem.image = UIImage(named: imageName)
-        childController.tabBarItem.selectedImage = UIImage(named: imageName + "_selected")
-        childController.tabBarItem.title = title
+        childController.tabBarItem.selectedImage = UIImage(named: imageName + "Select")
+        
+        childController.tabBarItem.title = titile
+        
         let nav = VCNavigationController()
         nav.addChildViewController(childController)
         addChildViewController(nav)

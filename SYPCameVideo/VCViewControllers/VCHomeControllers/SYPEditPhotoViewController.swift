@@ -1,18 +1,24 @@
 //
-//  VCFoundController.swift
+//  SYPEditPhotoViewController.swift
 //  SYPCameVideo
 //
-//  Created by dapeng on 2017/1/16.
+//  Created by dapeng on 2017/2/8.
 //  Copyright © 2017年 SYP. All rights reserved.
 //
 
 import UIKit
-
-class VCFoundController: VCBaseViewController {
+import Photos
+class SYPEditPhotoViewController: VCBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "发现"
+        
+        //获取图库所有资源
+               
+        //获取用户自定义相册，自己创建的额相册
+        //let userAblums = PHCollectionList.fetchtopLevelUserCollectionsWithOptions(nil)
+        
+        
         // Do any additional setup after loading the view.
     }
 
