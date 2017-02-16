@@ -12,30 +12,24 @@ import Photos
 class VCHomeViewController: VCBaseViewController ,UICollectionViewDelegate ,UICollectionViewDataSource {
     
     var assetsFetchResult =  PHFetchResult<AnyObject>()
-    
     ///缩略图大小
     var assetGridThumbnailSize = CGSize()
-    
     /// 带缓存的图片管理对象
     var imageManager = PHCachingImageManager()
     
-    var collectionView = UICollectionView()
-    
-    
+    var collectionView : UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "主页"
         
-        
         let allPhotosOptions = PHFetchOptions()
         allPhotosOptions.sortDescriptors?.append(NSSortDescriptor(key:"createDate",ascending:true))
-        
         //只取图片 
         allPhotosOptions.predicate = NSPredicate(format: "mediaType = %d",
                                              PHAssetMediaType.image.rawValue)
         
-        //assetGridThumbnailSize = PHAsset.fetchAssets(with: PHAssetMediaType.image, options: allPhotosOptions)
+//        assetGridThumbnailSize = PHAsset.fetchAssets(with: PHAssetMediaType.image, options: allPhotosOptions)
         
     
         assetsFetchResult = PHAsset.fetchAssets(with: PHAssetMediaType.image,
@@ -45,14 +39,7 @@ class VCHomeViewController: VCBaseViewController ,UICollectionViewDelegate ,UICo
         self.imageManager = PHCachingImageManager()
         self.resetCachedAssets()
         
-        
-        
-        
-        
-        
-        
-        
-        
+
         
         let flowLayout = UICollectionViewFlowLayout()
         
@@ -79,37 +66,38 @@ class VCHomeViewController: VCBaseViewController ,UICollectionViewDelegate ,UICo
         
         
         // 1.自定义 UICollectionView 的位置大小, 以及 Item 的显示样式为 flowLayout
-        self.collectionView =  UICollectionView(frame: CGRect(x:0,y: 64, width:self.view.frame.width,  height:self.view.frame.height-64-49), collectionViewLayout: flowLayout)
+        self.collectionView =  UICollectionView(frame: CGRect(x:0,y: 0, width:SWIDTH,  height:SHEIGHT), collectionViewLayout: flowLayout)
         
         // 2.设置 UICollectionView 的背景颜色
-        self.collectionView.backgroundColor = UIColor.white
+        self.collectionView?.backgroundColor = UIColor.white
         
         // 3.设置 UICollectionView 垂直滚动是否滚到 Item 的最底部内容
-        self.collectionView.alwaysBounceVertical = true
+        self.collectionView?.alwaysBounceVertical = true
         
         // 4.设置 UICollectionView 垂直滚动是否滚到 Item 的最右边内容
         // collection.alwaysBounceHorizontal = true
         
         // 5.设置 UICollectionView 的数据源对象
-        self.collectionView.dataSource = self
+        self.collectionView?.dataSource = self
         
         // 6.设置 UICollectionView 的代理对象
-        self.collectionView.delegate = self
+        self.collectionView?.delegate = self
         
         
         // 7.设置 UICollectionView 的单元格点击(默认是 true)
-        self.collectionView.allowsSelection = true
+        self.collectionView?.allowsSelection = true
         
         // 8.设置 UICollectionView 的单元格多选(默认是 false)
-        self.collectionView.allowsMultipleSelection = false
+        self.collectionView?.allowsMultipleSelection = false
         
         // 9.开启 UICollectionView 的分页显示效果
-        self.collectionView.isPagingEnabled = true
+        self.collectionView?.isPagingEnabled = true
         
         // 10.注册 UICollectionViewCell
-        //self.collection?.register(YXHomeCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewCell")
+        
+        self.collectionView!.register(SYPSelectPhotoCollectionViewCell.self, forCellWithReuseIdentifier:"PhotoCollectionViewCell")
         // 11.添加到 self.view 上
-        self.view.addSubview(self.collectionView)
+        self.view.addSubview(self.collectionView!)
 
         // Do any additional setup after loading the view.
     }
@@ -127,21 +115,26 @@ class VCHomeViewController: VCBaseViewController ,UICollectionViewDelegate ,UICo
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // storyboard里设计的单元格
-        let identify:String = "DesignViewCell"
+        let identify:String = "PhotoCollectionViewCell"
         // 获取设计的单元格，不需要再动态添加界面元素
-        let cell = (self.collectionView.dequeueReusableCell(
-            withReuseIdentifier: identify, for: indexPath as IndexPath)) as UICollectionViewCell
-        
+        let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: identify, for: indexPath as IndexPath) as! SYPSelectPhotoCollectionViewCell
+    
         let asset = self.assetsFetchResult[indexPath.row] as! PHAsset
-        
-        //获取缩略图
-        self.imageManager.requestImage(for: asset, targetSize: assetGridThumbnailSize,
-                                       contentMode: PHImageContentMode.aspectFill,
-                                       options: nil) { (image, nfo) in
-                                        (cell.contentView.viewWithTag(1) as! UIImageView).image = image
-                                        print(image)
+
+        let options = PHImageRequestOptions()
+        // deliveryMode 控制获取的图像的质量
+        options.deliveryMode = .highQualityFormat
+
+        self.imageManager.requestImage(for: asset, targetSize: assetGridThumbnailSize, contentMode: PHImageContentMode.aspectFit, options: options) { (result, info) in
+            
+            collectionCell.imgView?.image = result
+    
+            
+            //
         }
-        return cell
+        
+        
+        return collectionCell
 
     }
     // 获取单元格

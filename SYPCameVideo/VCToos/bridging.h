@@ -10,4 +10,5 @@
 #define bridging_h
 
 #import <BmobSDK/Bmob.h>
+//#import "MBProgressHUD.h"
 #endif /* bridging_h */

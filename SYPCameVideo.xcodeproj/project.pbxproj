@@ -33,6 +33,8 @@
 		E16BDE841E2C6D9900315160 /* VCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BDE831E2C6D9900315160 /* VCHomeViewController.swift */; };
 		E16BDE871E2C6E3A00315160 /* VCFoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BDE861E2C6E3A00315160 /* VCFoundController.swift */; };
 		E16BDE8A1E2C6F1700315160 /* VCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BDE891E2C6F1700315160 /* VCNavigationController.swift */; };
+		E1798C921E5093D800A3A224 /* VCVideoPreviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C911E5093D800A3A224 /* VCVideoPreviewsViewController.swift */; };
+		E17C26531E4DA8FE00CE9F4B /* SYPSelectPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17C26521E4DA8FE00CE9F4B /* SYPSelectPhotoCollectionViewCell.swift */; };
 		E1921B101E49DC8600A67895 /* VCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1921B0F1E49DC8600A67895 /* VCBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		E16BDE831E2C6D9900315160 /* VCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCHomeViewController.swift; sourceTree = "<group>"; };
 		E16BDE861E2C6E3A00315160 /* VCFoundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCFoundController.swift; sourceTree = "<group>"; };
 		E16BDE891E2C6F1700315160 /* VCNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCNavigationController.swift; sourceTree = "<group>"; };
+		E1798C911E5093D800A3A224 /* VCVideoPreviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCVideoPreviewsViewController.swift; sourceTree = "<group>"; };
+		E17C26521E4DA8FE00CE9F4B /* SYPSelectPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYPSelectPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1921B0F1E49DC8600A67895 /* VCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +151,7 @@
 		84832BE71DB63CB60077EC30 /* SYPCameVideo */ = {
 			isa = PBXGroup;
 			children = (
+				E17C26511E4DA88300CE9F4B /* View */,
 				E16BDE7C1E2C67F900315160 /* VCViewControllers */,
 				E16BDE791E2C672C00315160 /* VCToos */,
 				84832BE81DB63CB60077EC30 /* AppDelegate.swift */,
@@ -192,6 +197,7 @@
 		E16BDE821E2C6D5500315160 /* VCHomeControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E1798C911E5093D800A3A224 /* VCVideoPreviewsViewController.swift */,
 				E16BDE831E2C6D9900315160 /* VCHomeViewController.swift */,
 				E13B4C6E1E4ABA9A0016CC97 /* SYPEditPhotoViewController.swift */,
 			);
@@ -212,6 +218,15 @@
 				E16BDE891E2C6F1700315160 /* VCNavigationController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E17C26511E4DA88300CE9F4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E17C26521E4DA8FE00CE9F4B /* SYPSelectPhotoCollectionViewCell.swift */,
+			);
+			name = View;
+			path = View/View;
 			sourceTree = "<group>";
 		};
 		E1921B0E1E49DBF100A67895 /* VCBaseControllers */ = {
@@ -347,10 +362,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				841B37C41DB8A1B40022C7F2 /* SiriViewController.swift in Sources */,
+				E17C26531E4DA8FE00CE9F4B /* SYPSelectPhotoCollectionViewCell.swift in Sources */,
 				E16BDE871E2C6E3A00315160 /* VCFoundController.swift in Sources */,
 				E16BDE7B1E2C679000315160 /* VCTools.swift in Sources */,
 				E16BDE841E2C6D9900315160 /* VCHomeViewController.swift in Sources */,
 				E16BDE8A1E2C6F1700315160 /* VCNavigationController.swift in Sources */,
+				E1798C921E5093D800A3A224 /* VCVideoPreviewsViewController.swift in Sources */,
 				E1921B101E49DC8600A67895 /* VCBaseViewController.swift in Sources */,
 				E13B4C6F1E4ABA9A0016CC97 /* SYPEditPhotoViewController.swift in Sources */,
 				E16BDE7E1E2C685C00315160 /* ViewController.swift in Sources */,
