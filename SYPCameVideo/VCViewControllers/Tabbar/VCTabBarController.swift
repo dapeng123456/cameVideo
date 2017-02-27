@@ -19,6 +19,7 @@ class VCTabBarController: UITabBarController {
     private func addChildViewControllers(){
         addChildViewController(VCHomeViewController(), titile: "主页", imageName: "SYPHome")
         addChildViewController(VCFoundController(), titile: "我", imageName: "SYPMy")
+        addChildViewController(VCMyViewController(), titile: "我", imageName: "SYPMy")
     }
     
     private func addChildViewController(_ childController: UIViewController, titile:String, imageName:String) {
