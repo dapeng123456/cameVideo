@@ -12,7 +12,7 @@ class VCBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = VCBaseViewColor()
         
         // Do any additional setup after loading the view.
     }

@@ -5,7 +5,7 @@
 	<array>
 		<dict>
 			<key>image</key>
-			<string>VCMineScan</string>
+			<string>YXLiveScan</string>
 			<key>title</key>
 			<string>扫一扫登录</string>
 		</dict>
@@ -13,10 +13,42 @@
 	<array>
 		<dict>
 			<key>image</key>
-			<string>VCSet</string>
+			<string>YXLiveSet</string>
 			<key>title</key>
 			<string>设置</string>
 		</dict>
 	</array>
+    <array>
+        <dict>
+            <key>image</key>
+            <string>YXLiveScan</string>
+            <key>title</key>
+            <string>扫一扫登录</string>
+        </dict>
+    </array>
+    <array>
+        <dict>
+            <key>image</key>
+            <string>YXLiveScan</string>
+            <key>title</key>
+            <string>扫一扫登录</string>
+        </dict>
+    </array>
+    <array>
+        <dict>
+            <key>image</key>
+            <string>YXLiveScan</string>
+            <key>title</key>
+            <string>扫一扫登录</string>
+        </dict>
+    </array>
+    <array>
+        <dict>
+            <key>image</key>
+            <string>YXLiveScan</string>
+            <key>title</key>
+            <string>扫一扫登录</string>
+        </dict>
+    </array>
 </array>
 </plist>
