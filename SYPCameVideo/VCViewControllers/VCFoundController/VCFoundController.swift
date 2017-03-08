@@ -16,7 +16,7 @@ class VCFoundController: VCBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "发现"
-        
+        navigationItem.leftBarButtonItem = nil
         signInButton = UIButton(frame: CGRect(x:100, y:100, width:64, height:44))
         signInButton .setTitle("注册", for: .normal)
         signInButton .setTitleColor(UIColor.red, for: .normal)

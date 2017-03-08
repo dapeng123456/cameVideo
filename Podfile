@@ -9,6 +9,6 @@ target 'SYPCameVideo' do
   pod 'Kingfisher'
   pod 'BmobSDK'
   pod 'MBProgressHUD'
-
+  pod 'SnapKit'
 
 end

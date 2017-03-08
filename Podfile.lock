@@ -2,17 +2,20 @@ PODS:
   - BmobSDK (2.0.1)
   - Kingfisher (3.2.2)
   - MBProgressHUD (1.0.0)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - BmobSDK
   - Kingfisher
   - MBProgressHUD
+  - SnapKit
 
 SPEC CHECKSUMS:
   BmobSDK: 315013af15af31697a3b92cad2c74effed849b85
   Kingfisher: 821466474ad7ffc375a4aecadfa05068cfed67b3
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: 156558fdabe2ebaa7369eb9a2297787c0ab7630f
+PODFILE CHECKSUM: cb36e1c74c0ac6ceecf606e03c11c0557b8c4b67
 
 COCOAPODS: 1.1.1

@@ -22,7 +22,7 @@ class VCHomeViewController: VCBaseViewController ,UICollectionViewDelegate ,UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "主页"
-        
+        navigationItem.leftBarButtonItem = nil
         let allPhotosOptions = PHFetchOptions()
         allPhotosOptions.sortDescriptors?.append(NSSortDescriptor(key:"createDate",ascending:true))
         //只取图片 

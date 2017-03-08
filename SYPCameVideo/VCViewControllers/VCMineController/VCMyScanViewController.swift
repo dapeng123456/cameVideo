@@ -1,21 +1,23 @@
 //
-//  VCNavigationController.swift
+//  VCMyScanViewController.swift
 //  SYPCameVideo
 //
-//  Created by dapeng on 2017/1/16.
+//  Created by dapeng on 2017/3/6.
 //  Copyright © 2017年 SYP. All rights reserved.
 //
 
 import UIKit
 
-class VCNavigationController: UINavigationController {
+class VCMyScanViewController: VCBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.shared.statusBarStyle = .lightContent
-        UINavigationBar.appearance().barTintColor = VCRGBColor(r: 18, g: 19, b: 20, a: 1);
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName: UIFont .boldSystemFont(ofSize: 17)]
+        self.title = "扫一扫"
+        
+        
+        // Do any additional setup after loading the view.
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
