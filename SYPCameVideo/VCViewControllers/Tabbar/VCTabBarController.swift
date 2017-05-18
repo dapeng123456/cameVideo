@@ -15,12 +15,27 @@ class VCTabBarController: UITabBarController {
         UITabBar.appearance().backgroundColor = VCRGBColor(r: 18, g: 19, b: 20, a: 1)
         UITabBar.appearance().backgroundImage=UIImage()
         
-        //addChildViewControllers()
-        
+           addChildViewControllers()
+
         // Do any additional setup after loading the view.
     }
-
+    private func addChildViewControllers(){
+        addChildViewController(VCHomeViewController(), titile: "主页", imageName: "SYPHome")
+        addChildViewController(VCFoundController(), titile: "我", imageName: "SYPMy")
+        addChildViewController(VCMyViewController(), titile: "我", imageName: "SYPMy")
+    }
+    
+    private func addChildViewController(_ childController: UIViewController, titile:String, imageName:String) {
         
+        childController.tabBarItem.image = UIImage(named: imageName)
+        childController.tabBarItem.selectedImage = UIImage(named: imageName + "Select")
+        
+        childController.tabBarItem.title = titile
+        
+        let nav = VCNavigationController()
+        nav.addChildViewController(childController)
+        addChildViewController(nav)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
